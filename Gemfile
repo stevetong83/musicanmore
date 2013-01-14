@@ -30,6 +30,7 @@ end
 
 gem 'jquery-rails'
 gem 'mongoid'
+gem 'mongoid_slug'
 gem 'bson_ext'
 gem 'devise'
 gem 'rolify'

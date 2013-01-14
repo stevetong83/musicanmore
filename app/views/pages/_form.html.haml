@@ -1,0 +1,22 @@
+= form_for @page do |f|
+  = render "shared/error_messages", target: @page
+  %p
+    = f.label :title
+    = f.text_field :title
+  %p
+    = f.label :body
+    = f.text_area :body
+  %p
+    = f.label :navbar, "Add to Navigation Bar"
+    = f.check_box :navbar
+  %p
+    = f.label :page_title
+    = f.text_field :page_title
+  %p
+    = f.label :meta_keywords
+    = f.text_area :meta_keywords, rows: 3
+  %p
+    = f.label :meta_description
+    = f.text_area :meta_description, rows: 5
+  %p
+    = f.submit class: 'btn',  disable_with: 'Saving...' 
