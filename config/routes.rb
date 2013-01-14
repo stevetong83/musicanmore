@@ -4,6 +4,8 @@ Musicanmore::Application.routes.draw do
 
   resources :pages
 
+  match "/admin", to: "pages#index"
+
 
 
   # The priority is based upon order of creation:

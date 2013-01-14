@@ -73,6 +73,10 @@ list-style: inside;
 line-height: 1.5;
 }
 
+.list li {
+	list-style-type: disc;
+}
+
 blockquote {
 font-style: italic;
 padding: 10px 25px;

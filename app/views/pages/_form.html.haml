@@ -5,7 +5,8 @@
     = f.text_field :title
   %p
     = f.label :body
-    = f.text_area :body
+    = tinymce
+    = f.text_area :body, :class => "tinymce", :rows => 40, :cols => 120
   %p
     = f.label :navbar, "Add to Navigation Bar"
     = f.check_box :navbar
