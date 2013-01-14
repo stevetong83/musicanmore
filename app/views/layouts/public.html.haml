@@ -10,9 +10,11 @@
       #header
         = render "shared/header"
       = render "shared/notices"
-      #nav
-        = render "shared/navbar"
-      = yield
+      .row
+        #navbar
+          = render "shared/navbar"
+        #content
+          = yield
 
       #footer
         = render "shared/footer"

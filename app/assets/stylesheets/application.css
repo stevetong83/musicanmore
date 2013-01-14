@@ -12,20 +12,146 @@
  *= require_tree .
  */
 
- body {
+body {
+	background-color: #000;
+margin-top: 0px;
+font-family: "Trebuchet MS" Arial, Helvetica, sans-serif;
 
- }
+}
 
- ul {
- 	margin: 0;
- 	padding: 0;
- }
+h1 {font-size:200%;color:#fff;font-family:"Trebuchet MS", sans-serif;}
+h2 {font-size:140%;color:#d730f8;font-family:"Trebuchet MS" sans-serif;line-height:2;}
+h3 {font-size:125%;color:#fff;}
+h4 {font-size:50%;color:#fff;}
+h5 {font-size:100%;color:#d730f8;}
 
- li {
- 	list-style-type: none;
- }
+p {padding: 5px 0px;}
+em {font-weight: bold;}
 
- #wrapper {
- 	width: 980px;
- 	margin: 0 auto;
- }
+ul {margin: 0;padding: 0;}
+li {list-style-type: none;}
+
+a:link {color: #fff;}
+a:visited {color: #fff;}
+a:hover {color: #2831c0;}
+
+.row {clear:both;}
+
+#wrapper {
+	margin: 0 auto;
+	background-color: #000;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #fff;
+	font-size: small;
+}
+
+#header {
+	height: 350px;
+	background-image: url(homecopy.jpg);
+}
+
+.imgleft {
+float: right;
+margin: 0px 0px 5px 10px;
+clear: right;
+}
+
+.imgkaraoke {
+float: right;
+margin: 15px 0px 10px 10px;
+clear: right;
+}
+
+
+
+ul.list {
+padding: 5px 0px 5px 25px;
+list-style: inside;
+line-height: 1.5;
+}
+
+blockquote {
+font-style: italic;
+padding: 10px 25px;
+font-size: 95%;
+}
+
+/***** Navigation Bar *****/
+#navbar a:link {
+color: #d730f8;
+text-decoration: none;
+}
+
+#navbar a:visited {
+color: #d730f8;
+text-decoration: none;
+}
+
+#navbar a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+ul.navbar {
+height: 50px;
+width: 180px;
+text-align: center;
+padding-left: 5px;
+}
+
+li.navbar {
+background-image: url('navbutton.gif');
+background-repeat: no-repeat;
+list-style-type: none;
+}
+
+#navbar {
+font-family: "Trebuchet MS", sans-serif;
+color: #d730f8;
+width: 225px;
+padding: 0px 0px;
+text-align: center;
+font-weight: bold;
+line-height: 2.5;
+font-size: 165%;
+float: left;
+width: 180px;
+}
+
+/***** Content *****/
+
+#content {
+	min-height: 400px;
+	padding: 10px 0px;
+	padding-right: 0px;
+	width: 600px;
+	float: right;
+	line-height: 1.25;
+	font-size: 110%
+}
+
+/***** Footer *****/
+
+#footer {
+	background-image: url(footer.jpg);
+	clear: both;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.foot-contact {
+margin-left: 25px;
+}
+
+/*** Contact Form ***/
+
+#contact {margin-top:25px;width:500px;height: 360px;}
+.col1 {float:left;width:100px;text-align:right;margin:5px 0px;padding:2px 20px 0px 0px;}
+td {vertical-align:top;} 
+.col2 {float:left;margin:5px 0px;}
+#submit {float:left;margin-top:5px;}
