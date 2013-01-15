@@ -4,7 +4,7 @@ Musicanmore::Application.routes.draw do
 
   devise_for :users
 
-  resources :pages, :path => '', except: [:index, :home]
+  resources :pages#, :path => '', except: [:index, :home]
 
   get 'admin/pages'
   get 'admin/admin'
