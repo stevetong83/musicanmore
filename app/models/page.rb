@@ -22,7 +22,7 @@ class Page
   end
 
   def set_position
-    starting_position = Page.where(navbar: true).all.count
+    starting_position = Page.where(navbar: true).all.count + 1
     if self.navbar == true
       self.position = starting_position
     # else
