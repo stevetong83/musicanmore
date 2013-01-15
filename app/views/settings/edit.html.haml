@@ -1,0 +1,16 @@
+%h2 Site Settings
+
+= form_for @setting do |f|
+  
+  %p
+    = f.label :name, "Site Name"
+    = f.text_field :name
+  %p
+    = f.check_box :contact_page
+    = f.label :contact, "Add Contact Page"
+  %p
+    = f.check_box :blog_as_home_page
+    = f.label :blog_as_home_page, "Use Blog Roll as Home Page"
+
+  %p 
+    = f.submit 
