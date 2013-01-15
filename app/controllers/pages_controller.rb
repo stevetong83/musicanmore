@@ -57,7 +57,7 @@ class PagesController < ApplicationController
   def destroy
     @page = Page.find params[:id]
     @page.destroy
-    redirect_to pages_path, notice: "Page has been deleted"
+    redirect_to admin_pages_path, notice: "Page has been deleted"
   end
 
 

@@ -7,7 +7,7 @@ Musicanmore::Application.routes.draw do
   resources :pages, :path => '', except: [:index, :home]
 
   get 'admin/pages'
-  get 'admin/admin'
+  get 'admin/home'
 
 
   # The priority is based upon order of creation:

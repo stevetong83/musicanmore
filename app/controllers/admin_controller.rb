@@ -6,8 +6,9 @@ class AdminController < ApplicationController
     @navigation = Page.where(navbar: true).order_by('position ASC').all
   end
 
-  def admin
+  def home
     @pages = Page.all
+    @users = User.all
   end
 
 

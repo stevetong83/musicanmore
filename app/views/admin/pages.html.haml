@@ -1,6 +1,8 @@
+%h2 Pages
 - @pages.each do |page|
   %p
     = link_to page.title, page
     Position: 
     = page.position
-    = link_to "Edit", edit_page_path(page)
+    = link_to "", edit_page_path(page), class: 'icon-search icon-edit'
+    = link_to "", page, method: :delete, confirm: "Are you sure?", class: "icon-search icon-trash"

@@ -36,6 +36,8 @@ a:visited {color: #fff;}
 a:hover {color: #2831c0;}
 
 .row {clear:both;}
+.right {float: right;}
+.left {float: left;}
 
 #wrapper {
 	margin: 0 auto;
