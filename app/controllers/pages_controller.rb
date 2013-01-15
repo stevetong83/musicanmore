@@ -36,8 +36,8 @@ class PagesController < ApplicationController
     else
       @page_title = "#{@page.title} | Music an' More"
     end
-    @meta_description = @home.meta_description
-    @meta_keywords = @home.meta_keywords
+    @meta_description = @page.meta_description
+    @meta_keywords = @page.meta_keywords
   end
 
   def edit
