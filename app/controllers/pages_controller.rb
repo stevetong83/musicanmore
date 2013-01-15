@@ -10,11 +10,10 @@ class PagesController < ApplicationController
     else
       @page_title = "#{@home.title} | Music an' More"
     end
+    @meta_description = @home.meta_description
+    @meta_keywords = @home.meta_keywords
   end
 
-  def index
-    @pages = Page.all
-  end
 
   def new
   	@page = Page.new
@@ -23,7 +22,7 @@ class PagesController < ApplicationController
   def create
   	@page = Page.create params[:page]
   	if @page.save
-  		redirect_to pages_path, notice: "Page created successfully"
+  		redirect_to admin_pages_path, notice: "Page created successfully"
     else
       render 'new'
     end
@@ -37,6 +36,8 @@ class PagesController < ApplicationController
     else
       @page_title = "#{@page.title} | Music an' More"
     end
+    @meta_description = @home.meta_description
+    @meta_keywords = @home.meta_keywords
   end
 
   def edit
@@ -47,7 +48,7 @@ class PagesController < ApplicationController
     @page = Page.find params[:id]
     @page.update_attributes params[:page]
     if @page.save
-      redirect_to pages_path, notice: "Page was updated successfully"
+      redirect_to admin_pages_path, notice: "Page was updated successfully"
     else
       render 'edit'
     end

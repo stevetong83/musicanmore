@@ -1,11 +1,13 @@
 Musicanmore::Application.routes.draw do
 
+  get "contact/new"
+
   devise_for :users
 
-  resources :pages
+  resources :pages, :path => '', except: [:index, :home]
 
-  match "/admin", to: "pages#index"
-
+  get 'admin/pages'
+  get 'admin/admin'
 
 
   # The priority is based upon order of creation:
@@ -57,7 +59,7 @@ Musicanmore::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'pages#home'
+   root to: 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 

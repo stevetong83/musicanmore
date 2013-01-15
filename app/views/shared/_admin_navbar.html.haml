@@ -1,5 +1,9 @@
 %ul
   %li
-    = link_to "Sign Out", destroy_user_session_path, :method => "delete"
+    = link_to "Visit Site", root_path
+  %li
+    = link_to "Home", admin_admin_path
+  %li
+    = link_to "Pages", admin_pages_path
   %li
     = link_to "New Page", new_page_path

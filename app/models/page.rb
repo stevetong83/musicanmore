@@ -8,13 +8,14 @@ class Page
   field :body
   field :navbar, type: Boolean
   field :position, type: Integer
+  field :show_title, type: Boolean
   field :page_title
   field :meta_keywords
   field :meta_description
 
   validates :title, presence: true, uniqueness: true
 
-  before_save :set_position
+  before_create :set_position
 
   def to_param
     slug
@@ -24,8 +25,8 @@ class Page
     starting_position = Page.where(navbar: true).all.count
     if self.navbar == true
       self.position = starting_position
-    else
-      self.position = nil
+    # else
+    #   self.position = nil
     end
   end
   

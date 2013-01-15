@@ -4,6 +4,9 @@
     = f.label :title
     = f.text_field :title
   %p
+    = f.label :show_title
+    = f.check_box :show_title
+  %p
     = f.label :body
     = tinymce
     = f.text_area :body, :class => "tinymce", :rows => 40, :cols => 120

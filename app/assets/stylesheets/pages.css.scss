@@ -1,3 +1,56 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#admin-wrapper {
+
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #000;
+	padding: 25px;
+	a {
+		color: #000;
+	}
+	p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+#admin-navbar {
+	float: left;
+	width: 15%;
+	min-height: 1000px;
+	border-right: 1px solid #ccc;
+}
+
+#admin-content {
+	float: left;
+	width: 78%;
+	min-height: 1000px;
+	padding-left: 90px;
+}
+
+#admin-footer {
+	clear: both;
+}
+
+#admin-top-menu {
+	background-image: url(gray-menu.png);
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	a {
+		text-decoration: none;
+	}
+	ul {
+		float: right;
+		margin-right: 25px;
+	}
+	li {
+		float: left;
+	}
+}

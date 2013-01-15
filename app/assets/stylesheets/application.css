@@ -65,8 +65,6 @@ margin: 15px 0px 10px 10px;
 clear: right;
 }
 
-
-
 ul.list {
 padding: 5px 0px 5px 25px;
 list-style: inside;
@@ -79,17 +77,26 @@ line-height: 1.5;
 
 blockquote {
 font-style: italic;
-padding: 10px 25px;
-font-size: 95%;
+
+font-size: 90%;
 }
 
 /***** Navigation Bar *****/
-#navbar a:link {
+
+#navbar {
+font-family: "Trebuchet MS", sans-serif;
 color: #d730f8;
-text-decoration: none;
+width: 225px;
+padding: 10px 0px;
+text-align: center;
+font-weight: bold;
+line-height: 2.5;
+font-size: 165%;
+float: left;
+width: 180px;
 }
 
-#navbar a:visited {
+#navbar a {
 color: #d730f8;
 text-decoration: none;
 }
@@ -99,42 +106,32 @@ color: #fff;
 text-decoration: none;
 }
 
-ul.navbar {
-height: 50px;
-width: 180px;
-text-align: center;
-padding-left: 5px;
-}
-
-li.navbar {
+#navbar li {
 background-image: url('navbutton.gif');
 background-repeat: no-repeat;
-list-style-type: none;
+text-align: center;
 }
 
-#navbar {
-font-family: "Trebuchet MS", sans-serif;
-color: #d730f8;
-width: 225px;
-padding: 0px 0px;
-text-align: center;
-font-weight: bold;
-line-height: 2.5;
-font-size: 165%;
-float: left;
-width: 180px;
-}
+
 
 /***** Content *****/
 
 #content {
+	position: relative;
 	min-height: 400px;
 	padding: 10px 0px;
-	padding-right: 0px;
-	width: 600px;
+	width: 675px;
 	float: right;
 	line-height: 1.25;
 	font-size: 110%
+}
+
+.image-bottom {
+	position: relative;
+	float: right;
+	clear: right;
+	bottom: 0;
+	right: 0;
 }
 
 /***** Footer *****/

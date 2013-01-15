@@ -1,16 +1,21 @@
 !!!
 %html
   %head
-    %title 
-      = page_title
+    %title Railspress Admin
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #wrapper
-      #admin-navbar
-        = render "shared/admin_navbar"
+    #admin-top-menu
+      = render "shared/admin_top_menu"
+    #admin-wrapper
       = render "shared/notices"
-      = yield
+      - if user_signed_in?
+
+        #admin-navbar
+          = render "shared/admin_navbar"
+      #admin-content
+        = yield
+      #admin-footer
 
 
