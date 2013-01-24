@@ -12,11 +12,13 @@ class PagesController < ApplicationController
     end
     @meta_description = @home.meta_description
     @meta_keywords = @home.meta_keywords
+    @setting = Setting.first
   end
 
 
   def new
   	@page = Page.new
+    @setting = Setting.first
   end
 
   def create
@@ -38,10 +40,12 @@ class PagesController < ApplicationController
     end
     @meta_description = @page.meta_description
     @meta_keywords = @page.meta_keywords
+    @setting = Setting.first
   end
 
   def edit
     @page = Page.find params[:id]
+    @setting = Setting.first
   end
 
   def update

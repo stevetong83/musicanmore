@@ -1,13 +1,24 @@
 Musicanmore::Application.routes.draw do
 
+  get "settings/edit"
+
   get "contact/new"
 
   devise_for :users
+  devise_scope :user do
+    match "/sign_in", to: "devise/sessions#new"
+    match "/sign_up", to: "devise/registrations#new"
+  end
 
-  resources :pages, :path => '', except: [:index, :home]
+  resources :contact
+  resources :settings
+
+  resources :pages, path: '', except: [:index, :home, :new, :edit]
+  resources :pages, only: [:index, :home, :new, :edit]
 
   get 'admin/pages'
   get 'admin/home'
+  get 'admin/navbar'
 
 
   # The priority is based upon order of creation:
