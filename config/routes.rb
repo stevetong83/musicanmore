@@ -1,18 +1,13 @@
 Musicanmore::Application.routes.draw do
 
-
+  get "contact/new"
 
   devise_for :users
 
-    resources :contact
-  resources :settings
   resources :pages, :path => '', except: [:index, :home]
-
 
   get 'admin/pages'
   get 'admin/home'
-  get 'admin/navbar'
-
 
 
   # The priority is based upon order of creation:

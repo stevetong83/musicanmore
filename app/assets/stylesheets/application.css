@@ -57,7 +57,7 @@ a:hover {color: #2831c0;}
 
 .imgleft {
 float: right;
-margin: 15px 0px 5px 10px;
+margin: 0px 0px 5px 10px;
 clear: right;
 }
 
@@ -136,27 +136,15 @@ text-align: center;
 	right: 0;
 }
 
-.karaoke-left {
-	float: left;
-	width: 400px;
-}
-
-.karaoke-right {
-	float: right;
-	width: 260px;
-}
-
-
 /***** Footer *****/
 
 #footer {
 	background-image: url(footer.jpg);
 	clear: both;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 30px;
 	font-size: 100%;
 	line-height: 1.5;
-	height: 60px;
 }
 
 .foot-contact {

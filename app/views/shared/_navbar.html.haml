@@ -2,6 +2,3 @@
   - @navigation.each do |nav|
     %li
       = link_to nav.title, nav
-  - if @setting.contact_page == true    
-    %li
-      = link_to "Contact", new_contact_path
