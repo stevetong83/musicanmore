@@ -114,6 +114,16 @@ background-repeat: no-repeat;
 text-align: center;
 }
 
+.karaoke-left {
+	float: left;
+	width: 390px;
+}
+
+.karaoke-right {
+	float: right;
+	width: 260px;
+}
+
 
 
 /***** Content *****/
